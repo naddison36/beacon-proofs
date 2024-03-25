@@ -1,0 +1,23 @@
+# Compiler files
+cache/
+out/
+bin/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/**/dry-run/
+logs
+
+# Dotenv file
+.env
+
+# npm
+node_modules
+yarn.lock
+
+# hardhat
+cache_hardhat
+artifacts
+
+# Defender Actions
+dist

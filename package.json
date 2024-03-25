@@ -1,0 +1,9 @@
+{
+  "name": "js-beacon-proofs",
+  "version": "0.0.1",
+  "description": "Beacon chain proofs using JavaScript",
+  "main": "index.js",
+  "repository": "git@github.com:naddison36/js-beacon-proofs.git",
+  "author": "Nicholas Addison <nick@addisonbrown.com.au>",
+  "license": "MIT"
+}
