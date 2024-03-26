@@ -2,6 +2,7 @@
 cache/
 out/
 bin/
+dist
 
 # Ignores development broadcast logs
 !/broadcast
@@ -14,10 +15,7 @@ logs
 # npm
 node_modules
 yarn.lock
+*.log
 
-# hardhat
-cache_hardhat
-artifacts
-
-# Defender Actions
-dist
+# TypeScript
+*.tsbuildinfo

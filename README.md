@@ -1,66 +1,12 @@
-## Foundry
+# Beacon Chain Proofs
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Links
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- [Ethereum Proof-of-Stake Consensus Specifications](https://github.com/ethereum/consensus-specs?tab=readme-ov-file#ethereum-proof-of-stake-consensus-specifications)
+- [Beacon Simple Serialization Specification](https://github.com/ethereum/consensus-specs/blob/v1.3.0/ssz/simple-serialize.md#basic-types)
+- [Merkleization](https://eth2book.info/capella/part2/building_blocks/merkleization/) from Ben Edgington’s ETH 2 book
+- [Eth Beacon Node API](https://ethereum.github.io/beacon-APIs)
+- [EIP-4788: Beacon block root in the EVM](https://eips.ethereum.org/EIPS/eip-4788)
+- Video of Alex Stokes explaining [EIP-4788 Beacon Block Root in the EVM](https://iq.wiki/wiki/eip-4788-beacon-block-root-in-the-evm)
+- [EigenLayer proofs](https://github.com/Layr-Labs/eigenlayer-contracts/blob/dev/docs/core/proofs/BeaconChainProofs.md)
+- [EigenLayer's Golang program that generates proofs](https://github.com/Layr-Labs/eigenpod-proofs-generation?tab=readme-ov-file#generate-a-balance-update-proof)
