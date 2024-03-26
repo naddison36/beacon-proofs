@@ -3,11 +3,20 @@ module.exports = {
   verbose: true,
   transform: {
     // <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
-    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.ts$": [
+      "ts-jest",
+      {
+        useESM: true,
+      },
+    ],
   },
-  testPathIgnorePatterns: ["/build/", "/node_modules/"],
+  testPathIgnorePatterns: ["/node_modules/"],
   testRegex: "/__tests__/.*\\.test\\.ts$",
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  extensionsToTreatAsEsm: [".ts"],
+  moduleNameMapper: {
+    "^(\\.{1,2}/.*)\\.js$": "$1",
+  },
+  moduleFileExtensions: ["ts", "js", "json", "node"],
   globals: {
     "ts-jest": {
       diagnostics: {
@@ -18,4 +27,5 @@ module.exports = {
     },
   },
   testEnvironment: "node",
+  testTimeout: 20000,
 };

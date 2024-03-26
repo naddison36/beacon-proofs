@@ -12,11 +12,13 @@
     "test:sol": "forge test --fork-url=$PROVIDER_URL --gas-report"
   },
   "main": "index.js",
+  "type": "module",
   "repository": "git@github.com:naddison36/js-beacon-proofs.git",
   "author": "Nicholas Addison <nick@addisonbrown.com.au>",
   "license": "MIT",
   "devDependencies": {
     "@chainsafe/ssz,": "chainsafe/persistent-merkle-tree",
+    "@lodestar/types": "^1.17.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.30",
     "axios": "^1.6.8",

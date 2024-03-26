@@ -9,7 +9,13 @@
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/jest",
-      "args": ["--runInBand", "--coverage=false", "--no-cache"],
+      "args": [
+        "--runInBand",
+        "--coverage=false",
+        "--no-cache",
+        "--config",
+        "jest.config.cjs"
+      ],
       "cwd": "${workspaceRoot}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
