@@ -55,20 +55,20 @@ export default class BeaconClient {
     };
   }
 
-  // async getBeaconState(state: State = "head"): Promise<any> {
-  //   const sszData = await this.get(
-  //     `/eth/v2/debug/beacon/states/${state}`,
-  //     "application/octet-stream"
-  //   );
+  async getBeaconState(state: State = "head"): Promise<any> {
+    const sszData = await this.get(
+      `/eth/v2/debug/beacon/states/${state}`,
+      "application/octet-stream"
+    );
 
-  //   // const beaconState = ssz.deneb.BeaconState.deserialize(sszData);
-  //   // const beaconStateView = ssz.deneb.BeaconState.toViewDU(beaconState);
-  //   // const stateTree = new Tree(beaconStateView.node);
+    // const beaconState = ssz.deneb.BeaconState.deserialize(sszData);
+    // const beaconStateView = ssz.deneb.BeaconState.toViewDU(beaconState);
+    // const stateTree = new Tree(beaconStateView.node);
 
-  //   // log(`Got Beacon state tree`);
+    // log(`Got Beacon state tree`);
 
-  //   // return stateTree;
-  // }
+    // return stateTree;
+  }
 
   private async get(
     subUrl: string,

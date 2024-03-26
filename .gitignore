@@ -12,7 +12,8 @@ logs
 # Dotenv file
 .env
 
-# npm
+# package managers
+bun.lockb
 node_modules
 yarn.lock
 *.log

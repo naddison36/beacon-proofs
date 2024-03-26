@@ -1,3 +1,5 @@
+import { describe, expect, test } from "bun:test";
+
 import BeaconClient from "../BeaconClient.js";
 import "dotenv/config";
 import { bytes32 } from "../utils/regex.js";
