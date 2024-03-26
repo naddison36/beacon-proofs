@@ -1,3 +1,4 @@
+export type State = "head" | "genesis" | "finalized" | "justified" | number;
 export interface BlockHeaders {
   slot: number;
   proposerIndex: number;

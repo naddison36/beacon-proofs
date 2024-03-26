@@ -1,4 +1,17 @@
-# Beacon Chain Proofs
+# JavaScript Beacon Chain Proofs
+
+## Install
+
+```
+git clone git@github.com:naddison36/js-beacon-proofs.git
+yarn
+```
+
+## Tests
+
+```
+yarn test
+```
 
 ## Links
 

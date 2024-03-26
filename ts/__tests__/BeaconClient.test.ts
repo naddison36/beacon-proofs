@@ -1,6 +1,8 @@
-import BeaconClient from "../BeaconClient";
+import { describe, expect, test } from "bun:test";
+
+import BeaconClient from "../BeaconClient.js";
 import "dotenv/config";
-import { bytes32 } from "../utils/regex";
+import { bytes32 } from "../utils/regex.js";
 
 const client = new BeaconClient(process.env.PROVIDER_URL, 0);
 
@@ -15,6 +17,13 @@ describe("Beacon chain API client", () => {
       expect(result.stateRoot).toMatch(bytes32);
     });
   });
+//   describe("beacon state", () => {
+//     test.only("object", async () => {
+//       const result = await client.getBeaconState();
+//       expect(result).toBeDefined();
+//       expect(result.slot).toBeGreaterThan(0);
+//     });
+//   });
   describe("validators", () => {
     test("active", async () => {
       const result = await client.getValidator(1275252);
