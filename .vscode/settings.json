@@ -1,6 +1,6 @@
 {
   // The path to the `bun` executable.
-  "bun.runtime": "/Users/nicholasaddison/.bun/bin/bun",
+  "bun.runtime": "${env:HOME}/.bun/bin/bun",
 
   // If support for Bun should be added to the default "JavaScript Debug Terminal".
   "bun.debugTerminal.enabled": true,
