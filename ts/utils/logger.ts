@@ -9,4 +9,6 @@ debug.log = console.log.bind(console);
  *   log('something interesting happened');
  * @param {string} module name of the module to log for. eg "task:OSwap:snap"
  */
-export const logger = (module: string) => debug(`beacon:${module}`);
+const logger = (module: string) => debug(`beacon:${module}`);
+
+export default logger;

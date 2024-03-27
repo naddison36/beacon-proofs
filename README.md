@@ -4,13 +4,13 @@
 
 ```
 git clone git@github.com:naddison36/js-beacon-proofs.git
-yarn
+bun install
 ```
 
 ## Tests
 
 ```
-yarn test
+bun test
 ```
 
 ## Links
