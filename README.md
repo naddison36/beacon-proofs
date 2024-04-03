@@ -1,4 +1,4 @@
-# JavaScript Beacon Chain Proofs
+# Beacon Chain Proofs using TypeScript
 
 ## Install
 
@@ -7,10 +7,11 @@ git clone git@github.com:naddison36/js-beacon-proofs.git
 bun install
 ```
 
-## Tests
+### Run
 
 ```
-bun test
+export DEBUG=beacon*
+bun ./ts/index.ts
 ```
 
 ## Links
